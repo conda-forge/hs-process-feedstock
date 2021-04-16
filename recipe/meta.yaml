@@ -1,13 +1,13 @@
 {% set name = "hs-process" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://files.pythonhosted.org/packages/bb/12/820c4894f45ebeb6338e9fa8c6f070aa5b869b97c4a1fefb04bd70f8417c/hs_process-0.0.3.tar.gz"
-  sha256: ec8adc1562e5d7175341f3a58a0e08fd3f72915fa6a2eba12c841aaf5397cf65
+  url: "https://files.pythonhosted.org/packages/c3/bb/c26c92a0671f9d98434fae8a9491ff60e5628763da0a8b552d0c27188f71/hs_process-0.0.4.tar.gz"
+  sha256: a28e71a82e2f52eb082382d3dc43f04e694cdd556ad91b104a9f0069d8d5ecb9
 
 build:
   number: 0
@@ -23,13 +23,15 @@ requirements:
     - python
     - seaborn
     - spectral
+    - tqdm
+    - findiff
 
 test:
   imports:
     - hs_process
 
 about:
-  home: "https://github.com/tnigon/hyperspectral"
+  home: "https://github.com/tnigon/hs_process"
   license: MIT
   license_family: MIT
   license_file: LICENSE
