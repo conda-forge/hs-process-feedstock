@@ -24,8 +24,7 @@ requirements:
     - seaborn >=0.11.*
     - spectral >=0.22.*
     - tqdm >=4.60.*
-    - pip:
-        - findiff==0.8.*
+    - findiff >=0.8.*
 
 test:
   imports:
