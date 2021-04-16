@@ -12,15 +12,15 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  noarch: python
+  noarch: python >=3.6
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - geopandas
-    - python
+    - python >=3.6
     - seaborn
     - spectral
     - tqdm
